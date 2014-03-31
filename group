@@ -53,3 +53,4 @@ ubuntu:x:1001:
 vboxsf:x:999:
 ssl-cert:x:111:
 memcache:x:113:
+redis:x:114:

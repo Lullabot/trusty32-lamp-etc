@@ -27,4 +27,5 @@ puppet:x:106:112:Puppet configuration management daemon,,,:/var/lib/puppet:/bin/
 statd:x:107:65534::/var/lib/nfs:/bin/false
 ubuntu:x:1001:1001:Ubuntu:/home/ubuntu:/bin/bash
 vboxadd:x:999:1::/var/run/vboxadd:/bin/false
-memcache:x:108:113::/nonexistent:/bin/false
+memcache:x:108:113:Memcached,,,:/nonexistent:/bin/false
+redis:x:109:114::/var/lib/redis:/bin/false
