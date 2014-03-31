@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# Notification on support of vagrant images
+#
+echo ""
+echo "This is a customized Ubuntu Server Cloud Image for use within"
+echo "the Vagrant Development environment. See http://http://www.vagrantbox.es/"
+echo "for more information"
+echo ""
+echo "Support: Only the base packages installed from the main archive are supported by"
+echo "         Canonical. Virtualbox, Vagrant, and Chef are 'universe' packages."
+echo "         The interaction between these components and universe dependencies are"
+echo "         supported by the universe community. These images are not Canonical"
+echo "         supported and are intended only for development purposes."
+echo ""
