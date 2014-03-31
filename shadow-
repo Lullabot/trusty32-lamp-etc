@@ -26,3 +26,5 @@ vagrant:$6$s4ry.F9w$g1ZqeCCfpQeh9yKJ9NI/GP/TLaSur45uwLbrdM77iFcudGK4wtPISm8QhH8x
 puppet:*:16123:0:99999:7:::
 statd:*:16123:0:99999:7:::
 ubuntu:!:16160:0:99999:7:::
+vboxadd:!:16160::::::
+memcache:!:16160:0:99999:7:::

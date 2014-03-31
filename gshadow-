@@ -51,3 +51,4 @@ vagrant:!::
 puppet:!::
 ubuntu:!::
 vboxsf:!::
+ssl-cert:!::
