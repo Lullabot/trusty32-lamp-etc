@@ -50,3 +50,4 @@ admin:x:110:
 vagrant:x:1000:
 puppet:x:112:
 ubuntu:x:1001:
+vboxsf:x:999:

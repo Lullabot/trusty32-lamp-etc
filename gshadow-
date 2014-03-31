@@ -50,3 +50,4 @@ admin:!::
 vagrant:!::
 puppet:!::
 ubuntu:!::
+vboxsf:!::
