@@ -19,13 +19,6 @@ STATEDIR="$RUN_DIR/state"
 
 . /lib/lsb/init-functions
 
-# Make sure that it's clear to the user that they shouldn't use this
-# script under upstart
-if init_is_upstart; then
-	echo "ERROR: Calling a sysvinit script on a system using upstart isn't supported. Please use the 'service' command instead."
-	exit 1
-fi
-
 CONFIGURE_INTERFACES=yes
 EXCLUDE_INTERFACES=
 VERBOSE=no
@@ -164,6 +157,9 @@ stop)
 	;;
 
 reload)
+	if init_is_upstart; then
+		exit 1
+	fi
 	process_options
 
 	log_action_begin_msg "Reloading network interfaces configuration"

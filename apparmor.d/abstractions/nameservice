@@ -56,7 +56,7 @@
   /etc/default/nss               r,
 
   # avahi-daemon is used for mdns4 resolution
-  /{,var/}run/avahi-daemon/socket w,
+  /{,var/}run/avahi-daemon/socket rw,
 
   # nis
   #include <abstractions/nis>
@@ -83,4 +83,4 @@
   network inet6 dgram,
 
   # interface details
-  @{PROC}/*/net/route r,
+  @{PROC}/@{pid}/net/route r,

@@ -9,5 +9,11 @@ APT
     "^linux-backports-modules-.*-3.13.0-11-generic$";
     "^linux-headers-3.13.0-11-generic$";
     "^linux-tools-3.13.0-11-generic$";
+    "^linux-image-3.13.0-20-generic$";
+    "^linux-image-extra-3.13.0-20-generic$";
+    "^linux-signed-image-3.13.0-20-generic$";
+    "^linux-backports-modules-.*-3.13.0-20-generic$";
+    "^linux-headers-3.13.0-20-generic$";
+    "^linux-tools-3.13.0-20-generic$";
   };
 };
