@@ -21,7 +21,7 @@ tape:x:26:
 sudo:x:27:ubuntu
 audio:x:29:ubuntu
 dip:x:30:ubuntu
-www-data:x:33:
+www-data:x:33:vagrant
 backup:x:34:
 operator:x:37:
 list:x:38:
@@ -47,9 +47,10 @@ mlocate:x:107:
 ssh:x:108:
 landscape:x:109:
 admin:x:110:
-vagrant:x:1000:
+vagrant:x:1000:vagrant
 puppet:x:112:
 ubuntu:x:1001:
 vboxsf:x:999:
 ssl-cert:x:111:
 memcache:x:113:
+redis:x:114:
