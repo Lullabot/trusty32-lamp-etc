@@ -5,6 +5,13 @@
 
 [ -r /usr/share/acpi-support/power-funcs ] && . /usr/share/acpi-support/power-funcs
 
+# If logind is running, it already handles power button presses; desktop
+# environments put inhibitors to logind if they want to handle the key
+# themselves.
+if pidof systemd-logind >/dev/null; then
+    exit 0
+fi
+
 # getXuser gets the X user belonging to the display in $displaynum.
 # If you want the foreground X user, use getXconsole!
 getXuser() {
