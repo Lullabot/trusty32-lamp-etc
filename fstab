@@ -1,1 +1,2 @@
 LABEL=cloudimg-rootfs	/	 ext4	defaults	0 0
+/dev/mysql/master	/mysql/master	ext4	defaults	0	0
