@@ -55,4 +55,4 @@ ssl-cert:!::
 memcache:!::
 redis:!::
 mysql:!::
-mongodb:!::
+mongodb:!::mongodb

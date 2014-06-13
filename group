@@ -56,3 +56,4 @@ memcache:x:113:
 redis:x:114:
 mysql:x:115:
 mongodb:x:116:mongodb
+avahi:x:117:
