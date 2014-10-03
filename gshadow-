@@ -51,8 +51,8 @@ vagrant:!::
 puppet:!::
 ubuntu:!::
 vboxsf:!::
-ssl-cert:!::
-memcache:!::
-redis:!::
 mysql:!::
+redis:!::
+memcache:!::
 mongodb:!::mongodb
+ssl-cert:!::

@@ -13,3 +13,4 @@ echo "         The interaction between these components and universe dependencie
 echo "         supported by the universe community. These images are not Canonical"
 echo "         supported and are intended only for development purposes."
 echo ""
+# CLOUD_IMG: This file was created/modified by the Cloud Image build process
