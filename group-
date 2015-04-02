@@ -56,3 +56,4 @@ redis:x:113:
 memcache:x:114:
 mongodb:x:115:mongodb
 ssl-cert:x:116:
+avahi:x:117:

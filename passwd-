@@ -31,4 +31,4 @@ mysql:x:108:111:MySQL Server,,,:/var/lib/mysql:/bin/false
 redis:x:109:113:redis server,,,:/var/lib/redis:/bin/false
 memcache:x:110:114:Memcached,,,:/nonexistent:/bin/false
 mongodb:x:111:65534::/home/mongodb:/bin/false
-avahi:x:112:117::/var/run/avahi-daemon:/bin/false
+avahi:x:112:117:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
