@@ -4129,3 +4129,147 @@ answer ROOT_ACCESS_METHOD su
 file /etc/vmware-tools/manifest.txt
 remove_answer ROOT_ACCESS_METHOD
 answer ROOT_ACCESS_METHOD sudo
+remove_file /usr/local/lib/vmware-tools/sbin64/vmtoolsd
+file /usr/local/lib/vmware-tools/sbin64/vmtoolsd
+remove_file /usr/local/sbin/vmware-checkvm
+file /usr/local/sbin/vmware-checkvm
+remove_file /usr/local/sbin/vmware-rpctool
+file /usr/local/sbin/vmware-rpctool
+remove_file /usr/local/sbin/vmtoolsd
+file /usr/local/sbin/vmtoolsd
+remove_file /usr/local/lib/vmware-tools/sbin64/vmware-modconfig-console
+file /usr/local/lib/vmware-tools/sbin64/vmware-modconfig-console
+remove_file /usr/local/bin/vmware-toolbox-cmd
+file /usr/local/bin/vmware-toolbox-cmd
+remove_file /usr/local/bin/vmware-user
+file /usr/local/bin/vmware-user
+remove_file /usr/local/lib/vmware-tools/lib
+file /usr/local/lib/vmware-tools/lib
+remove_file /usr/local/lib/vmware-tools/bin
+file /usr/local/lib/vmware-tools/bin
+remove_file /usr/local/lib/vmware-tools/sbin
+file /usr/local/lib/vmware-tools/sbin
+remove_file /usr/local/lib/vmware-tools/libconf
+file /usr/local/lib/vmware-tools/libconf
+remove_file /usr/local/lib/vmware-tools/plugins
+file /usr/local/lib/vmware-tools/plugins
+remove_file /etc/vmware-tools/plugins
+file /etc/vmware-tools/plugins
+remove_file /etc/pam.d/vmtoolsd
+file /etc/pam.d/vmtoolsd
+remove_file /usr/local/bin/vmware-hgfsclient
+file /usr/local/bin/vmware-hgfsclient
+remove_file /usr/local/bin/vmware-xferlogs
+file /usr/local/bin/vmware-xferlogs
+remove_file /usr/local/sbin/vmware-vmblock-fuse
+file /usr/local/sbin/vmware-vmblock-fuse
+remove_file /usr/local/bin/vmware-xdg-detect-de
+file /usr/local/bin/vmware-xdg-detect-de
+remove_file /etc/vmware-tools/icu
+file /etc/vmware-tools/icu
+remove_answer RESTORE_RAMDISK_CMD
+answer RESTORE_RAMDISK_CMD /usr/sbin/update-initramfs -u -k all
+remove_answer RESTORE_RAMDISK_ONECALL
+answer RESTORE_RAMDISK_ONECALL 1
+remove_answer APPENDED_FILES
+answer APPENDED_FILES /etc/initramfs-tools/modules:/etc/initramfs-tools/modules:/etc/initramfs-tools/modules:/etc/initramfs-tools/modules:/etc/initramfs-tools/modules
+file /etc/vmware-tools/config 1427991710
+remove_file /usr/local/lib/vmware-tools/lib64/libconf/etc/fonts/fonts.conf
+file /usr/local/lib/vmware-tools/lib64/libconf/etc/fonts/fonts.conf 1427991710
+file /etc/vmware-tools/manifest.txt
+remove_answer ROOT_ACCESS_METHOD
+answer ROOT_ACCESS_METHOD su
+remove_file /usr/local/lib/vmware-tools/sbin64/vmtoolsd
+file /usr/local/lib/vmware-tools/sbin64/vmtoolsd
+remove_file /usr/local/sbin/vmware-checkvm
+file /usr/local/sbin/vmware-checkvm
+remove_file /usr/local/sbin/vmware-rpctool
+file /usr/local/sbin/vmware-rpctool
+remove_file /usr/local/sbin/vmtoolsd
+file /usr/local/sbin/vmtoolsd
+remove_file /usr/local/lib/vmware-tools/sbin64/vmware-modconfig-console
+file /usr/local/lib/vmware-tools/sbin64/vmware-modconfig-console
+remove_file /usr/local/bin/vmware-toolbox-cmd
+file /usr/local/bin/vmware-toolbox-cmd
+remove_file /usr/local/bin/vmware-user
+file /usr/local/bin/vmware-user
+remove_file /usr/local/lib/vmware-tools/lib
+file /usr/local/lib/vmware-tools/lib
+remove_file /usr/local/lib/vmware-tools/bin
+file /usr/local/lib/vmware-tools/bin
+remove_file /usr/local/lib/vmware-tools/sbin
+file /usr/local/lib/vmware-tools/sbin
+remove_file /usr/local/lib/vmware-tools/libconf
+file /usr/local/lib/vmware-tools/libconf
+remove_file /usr/local/lib/vmware-tools/plugins
+file /usr/local/lib/vmware-tools/plugins
+remove_file /etc/vmware-tools/plugins
+file /etc/vmware-tools/plugins
+remove_file /etc/pam.d/vmtoolsd
+file /etc/pam.d/vmtoolsd
+remove_file /usr/local/bin/vmware-hgfsclient
+file /usr/local/bin/vmware-hgfsclient
+remove_file /usr/local/bin/vmware-xferlogs
+file /usr/local/bin/vmware-xferlogs
+remove_file /usr/local/sbin/vmware-vmblock-fuse
+file /usr/local/sbin/vmware-vmblock-fuse
+remove_file /usr/local/bin/vmware-xdg-detect-de
+file /usr/local/bin/vmware-xdg-detect-de
+remove_file /etc/vmware-tools/icu
+file /etc/vmware-tools/icu
+remove_answer VMSYNC_CONFED
+answer VMSYNC_CONFED no
+remove_answer VMCI_CONFED
+answer VMCI_CONFED no
+remove_answer VSOCK_CONFED
+answer VSOCK_CONFED no
+remove_answer VMXNET3_CONFED
+answer VMXNET3_CONFED no
+remove_answer PVSCSI_CONFED
+answer PVSCSI_CONFED no
+remove_answer VMMEMCTL_CONFED
+answer VMMEMCTL_CONFED no
+remove_answer ENABLE_HGFS
+answer ENABLE_HGFS yes
+file /lib/modules/3.13.0-45-generic/misc/vmhgfs.ko 1427991735
+file /usr/local/lib/vmware-tools/symvers/vmhgfs-3.13.0-45-generic 1427991735
+directory /usr/local/lib/vmware-tools/symvers
+answer VMHGFS_313045generic_NAME vmhgfs
+answer VMHGFS_313045generic_PATH /lib/modules/3.13.0-45-generic/misc/vmhgfs.ko
+answer UPDATEDB_CONF_FILE /etc/updatedb.conf
+answer UPDATEDB_CONF_KEY PRUNEFS
+remove_answer VMHGFS_CONFED
+answer VMHGFS_CONFED yes
+remove_answer VMXNET_CONFED
+answer VMXNET_CONFED no
+remove_answer ENABLE_VMBLOCK
+answer ENABLE_VMBLOCK no
+remove_answer VMBLOCK_CONFED
+answer VMBLOCK_CONFED no
+remove_answer AUTO_KMODS_ENABLED_ANSWER
+answer AUTO_KMODS_ENABLED_ANSWER yes
+remove_answer AUTO_KMODS_ENABLED
+answer AUTO_KMODS_ENABLED yes
+remove_file /etc/ld.so.conf.d/vmware-tools-libraries.conf
+file /etc/ld.so.conf.d/vmware-tools-libraries.conf 1427991738
+remove_answer LD_DOT_SO_DOT_CONF_ADDED_FILE
+answer LD_DOT_SO_DOT_CONF_ADDED_FILE yes
+remove_answer ENABLE_VGAUTH
+answer ENABLE_VGAUTH yes
+remove_answer ENABLE_VGAUTH
+answer ENABLE_VGAUTH yes
+file /etc/X11/Xsession.d/99-vmware_vmware-user
+remove_file /etc/udev/rules.d/99-vmware-scsi-udev.rules
+file /etc/udev/rules.d/99-vmware-scsi-udev.rules 1427991739
+remove_answer RESTORE_RAMDISK_CMD
+answer RESTORE_RAMDISK_CMD /usr/sbin/update-initramfs -u -k all
+remove_answer RESTORE_RAMDISK_ONECALL
+answer RESTORE_RAMDISK_ONECALL 1
+remove_answer APPENDED_FILES
+answer APPENDED_FILES /etc/initramfs-tools/modules:/etc/initramfs-tools/modules:/etc/initramfs-tools/modules:/etc/initramfs-tools/modules:/etc/initramfs-tools/modules:/etc/initramfs-tools/modules
+file /etc/vmware-tools/config 1427991744
+remove_file /usr/local/lib/vmware-tools/lib64/libconf/etc/fonts/fonts.conf
+file /usr/local/lib/vmware-tools/lib64/libconf/etc/fonts/fonts.conf 1427991744
+file /etc/vmware-tools/manifest.txt
+remove_answer ROOT_ACCESS_METHOD
+answer ROOT_ACCESS_METHOD sudo
