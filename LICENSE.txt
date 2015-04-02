@@ -1,0 +1,6 @@
+This repository contains configuration from a variety of packages. Anything
+which happens to be "code" would be under the license of the original software.
+
+There is nothing in this repository that contains configuration for proprietary
+software. The vast majority of installed packages will be under a GPL or
+MIT-derived license. See /usr/share/doc in trusty32-lamp for package licenses.
