@@ -39,5 +39,5 @@ table_open_cache = 256
 
 slow_query_log = 'ON'
 log_queries_not_using_indexes = 'ON'
-slow_query_log_file = '/var/log/mysql/slow-query.log';
+slow_query_log_file = '/var/log/mysql/slow-query.log'
 long_query_time = '0.5'
