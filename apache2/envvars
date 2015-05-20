@@ -1,7 +1,8 @@
 # envvars - default environment variables for apache2ctl
 
 # this won't be correct after changing uid
-unset HOME
+# unset HOME
+export HOME="/var/www"
 
 # for supporting multiple apache2 instances
 if [ "${APACHE_CONFDIR##/etc/apache2-}" != "${APACHE_CONFDIR}" ] ; then
