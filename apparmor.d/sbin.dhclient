@@ -70,11 +70,15 @@
   /usr/lib/NetworkManager/nm-dhcp-client.action mr,
 
   /var/lib/NetworkManager/*lease r,
+  network inet dgram,
+  network inet6 dgram,
 }
 
 /usr/lib/connman/scripts/dhclient-script {
   #include <abstractions/base>
   #include <abstractions/dbus>
   /usr/lib/connman/scripts/dhclient-script      mr,
+  network inet dgram,
+  network inet6 dgram,
 }
 

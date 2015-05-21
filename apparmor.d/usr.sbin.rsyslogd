@@ -32,7 +32,7 @@
   /dev/xconsole                 rw,
   @{PROC}/kmsg                  r,
 
-  /dev/log                      wl,
+  /dev/log                      rwl,
   /var/lib/*/dev/log            wl,
   /var/spool/postfix/dev/log    wl,
 
