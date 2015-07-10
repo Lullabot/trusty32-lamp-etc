@@ -2,25 +2,25 @@
 APT::NeverAutoRemove
 {
    "^linux-image-3\.13\.0-45-generic$";
-   "^linux-image-3\.13\.0-48-generic$";
+   "^linux-image-3\.13\.0-57-generic$";
    "^linux-headers-3\.13\.0-45-generic$";
-   "^linux-headers-3\.13\.0-48-generic$";
+   "^linux-headers-3\.13\.0-57-generic$";
    "^linux-image-extra-3\.13\.0-45-generic$";
-   "^linux-image-extra-3\.13\.0-48-generic$";
+   "^linux-image-extra-3\.13\.0-57-generic$";
    "^linux-signed-image-3\.13\.0-45-generic$";
-   "^linux-signed-image-3\.13\.0-48-generic$";
+   "^linux-signed-image-3\.13\.0-57-generic$";
    "^kfreebsd-image-3\.13\.0-45-generic$";
-   "^kfreebsd-image-3\.13\.0-48-generic$";
+   "^kfreebsd-image-3\.13\.0-57-generic$";
    "^kfreebsd-headers-3\.13\.0-45-generic$";
-   "^kfreebsd-headers-3\.13\.0-48-generic$";
+   "^kfreebsd-headers-3\.13\.0-57-generic$";
    "^gnumach-image-3\.13\.0-45-generic$";
-   "^gnumach-image-3\.13\.0-48-generic$";
+   "^gnumach-image-3\.13\.0-57-generic$";
    "^.*-modules-3\.13\.0-45-generic$";
-   "^.*-modules-3\.13\.0-48-generic$";
+   "^.*-modules-3\.13\.0-57-generic$";
    "^.*-kernel-3\.13\.0-45-generic$";
-   "^.*-kernel-3\.13\.0-48-generic$";
+   "^.*-kernel-3\.13\.0-57-generic$";
    "^linux-backports-modules-.*-3\.13\.0-45-generic$";
-   "^linux-backports-modules-.*-3\.13\.0-48-generic$";
+   "^linux-backports-modules-.*-3\.13\.0-57-generic$";
    "^linux-tools-3\.13\.0-45-generic$";
-   "^linux-tools-3\.13\.0-48-generic$";
+   "^linux-tools-3\.13\.0-57-generic$";
 };
