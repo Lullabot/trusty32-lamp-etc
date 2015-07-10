@@ -1106,8 +1106,7 @@ vmware_mount_vmhgfs() {
 # Start the guest filesystem driver and mount it
 vmware_start_vmhgfs() {
   # only load vmhgfs if it's not already loaded
-  real_vmci=$(vmware_real_modname $vmci $vmci_alias)
-  if [ "`isLoaded "$vmhgfs"`" = 'no' -a "`isLoaded "$real_vmci"`" = 'yes' ]; then
+  if [ "`isLoaded "$vmhgfs"`" = 'no' ]; then
     vmware_load_module $vmhgfs
   fi
 }
@@ -1269,7 +1268,7 @@ is_vmxnet3_needed() {
 }
 
 is_vmci_needed() {
-   if [ "`is_vsock_needed`" = 'yes' -o "`is_vmhgfs_needed`" = 'yes' \
+   if [ "`is_vsock_needed`" = 'yes' \
         -o "$vmdb_answer_VMCI_CONFED" = 'yes' ]; then
       echo yes
    else
@@ -1409,7 +1408,6 @@ main()
                exitcode=$(($exitcode + $?))
             fi
 
-         # vmhgfs needs vmci started first
             if [ "`is_vmhgfs_needed`" = 'yes' -a "`is_ESX_running`" = 'no' ]; then
                vmware_exec 'Guest filesystem driver:' vmware_start_vmhgfs
                exitcode=$(($exitcode + $?))
