@@ -2,14 +2,25 @@
 APT::NeverAutoRemove
 {
    "^linux-image-3\.13\.0-53-generic$";
+   "^linux-image-3\.13\.0-57-generic$";
    "^linux-headers-3\.13\.0-53-generic$";
+   "^linux-headers-3\.13\.0-57-generic$";
    "^linux-image-extra-3\.13\.0-53-generic$";
+   "^linux-image-extra-3\.13\.0-57-generic$";
    "^linux-signed-image-3\.13\.0-53-generic$";
+   "^linux-signed-image-3\.13\.0-57-generic$";
    "^kfreebsd-image-3\.13\.0-53-generic$";
+   "^kfreebsd-image-3\.13\.0-57-generic$";
    "^kfreebsd-headers-3\.13\.0-53-generic$";
+   "^kfreebsd-headers-3\.13\.0-57-generic$";
    "^gnumach-image-3\.13\.0-53-generic$";
+   "^gnumach-image-3\.13\.0-57-generic$";
    "^.*-modules-3\.13\.0-53-generic$";
+   "^.*-modules-3\.13\.0-57-generic$";
    "^.*-kernel-3\.13\.0-53-generic$";
+   "^.*-kernel-3\.13\.0-57-generic$";
    "^linux-backports-modules-.*-3\.13\.0-53-generic$";
+   "^linux-backports-modules-.*-3\.13\.0-57-generic$";
    "^linux-tools-3\.13\.0-53-generic$";
+   "^linux-tools-3\.13\.0-57-generic$";
 };
