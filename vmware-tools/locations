@@ -4085,3 +4085,58 @@ file /usr/local/lib/vmware-tools/lib64/libconf/etc/fonts/fonts.conf 1436549764
 file /etc/vmware-tools/manifest.txt
 remove_answer ROOT_ACCESS_METHOD
 answer ROOT_ACCESS_METHOD sudo
+remove_file /usr/local/lib/vmware-tools/sbin64/vmtoolsd
+file /usr/local/lib/vmware-tools/sbin64/vmtoolsd
+remove_file /usr/local/sbin/vmware-checkvm
+file /usr/local/sbin/vmware-checkvm
+remove_file /usr/local/sbin/vmware-rpctool
+file /usr/local/sbin/vmware-rpctool
+remove_file /usr/local/sbin/vmtoolsd
+file /usr/local/sbin/vmtoolsd
+remove_file /usr/local/lib/vmware-tools/sbin64/vmware-modconfig-console
+file /usr/local/lib/vmware-tools/sbin64/vmware-modconfig-console
+remove_file /usr/local/bin/vmware-toolbox-cmd
+file /usr/local/bin/vmware-toolbox-cmd
+remove_file /usr/local/bin/vmware-user
+file /usr/local/bin/vmware-user
+remove_file /usr/local/lib/vmware-tools/lib
+file /usr/local/lib/vmware-tools/lib
+remove_file /usr/local/lib/vmware-tools/bin
+file /usr/local/lib/vmware-tools/bin
+remove_file /usr/local/lib/vmware-tools/sbin
+file /usr/local/lib/vmware-tools/sbin
+remove_file /usr/local/lib/vmware-tools/libconf
+file /usr/local/lib/vmware-tools/libconf
+remove_file /usr/local/lib/vmware-tools/plugins
+file /usr/local/lib/vmware-tools/plugins
+remove_file /etc/vmware-tools/plugins
+file /etc/vmware-tools/plugins
+remove_file /etc/pam.d/vmtoolsd
+file /etc/pam.d/vmtoolsd
+remove_file /usr/local/bin/vmware-hgfsclient
+file /usr/local/bin/vmware-hgfsclient
+remove_file /usr/local/bin/vmware-xferlogs
+file /usr/local/bin/vmware-xferlogs
+remove_file /usr/local/sbin/vmware-vmblock-fuse
+file /usr/local/sbin/vmware-vmblock-fuse
+remove_file /usr/local/bin/vmware-xdg-detect-de
+file /usr/local/bin/vmware-xdg-detect-de
+remove_file /etc/vmware-tools/icu
+file /etc/vmware-tools/icu
+file /lib/modules/3.13.0-63-generic/misc/vmhgfs.ko 1442924675
+file /usr/local/lib/vmware-tools/symvers/vmhgfs-3.13.0-63-generic 1442924675
+directory /usr/local/lib/vmware-tools/symvers
+answer VMHGFS_313063generic_NAME vmhgfs
+answer VMHGFS_313063generic_PATH /lib/modules/3.13.0-63-generic/misc/vmhgfs.ko
+remove_answer RESTORE_RAMDISK_CMD
+answer RESTORE_RAMDISK_CMD /usr/sbin/update-initramfs -u -k all
+remove_answer RESTORE_RAMDISK_ONECALL
+answer RESTORE_RAMDISK_ONECALL 1
+remove_answer APPENDED_FILES
+answer APPENDED_FILES /etc/initramfs-tools/modules:/etc/initramfs-tools/modules:/etc/initramfs-tools/modules:/etc/initramfs-tools/modules
+file /etc/vmware-tools/config 1442924681
+remove_file /usr/local/lib/vmware-tools/lib64/libconf/etc/fonts/fonts.conf
+file /usr/local/lib/vmware-tools/lib64/libconf/etc/fonts/fonts.conf 1442924681
+file /etc/vmware-tools/manifest.txt
+remove_answer ROOT_ACCESS_METHOD
+answer ROOT_ACCESS_METHOD su
