@@ -3,7 +3,7 @@
 # Author: Jamie Strandboge <jamie@canonical.com>
 #include <tunables/global>
 
-/sbin/dhclient {
+/sbin/dhclient flags=(attach_disconnected) {
   #include <abstractions/base>
   #include <abstractions/nameservice>
 
