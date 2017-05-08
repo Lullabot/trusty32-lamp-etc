@@ -30,14 +30,17 @@ return array(
                 return false;
         }
 
-	// Profile if ?xhprof=on, and continue to profile for the next hour.
-        if (isset($_GET['xhprof']) && $_GET['xhprof'] == 'on') {
-                setcookie('xhprof', 'on', time() + 3600);
-                return true;
-        }
+	// Profile if ?xhgui=on, and continue to profile for the next hour. Keep
+	// xhprof for legacy users.
+	foreach (array('xhprof', 'xhgui') as $switch) {
+		if (isset($_GET[$switch]) && $_GET[$switch] == 'on') {
+			setcookie('xhgui', 'on', time() + 3600);
+			return true;
+		}
+	}
 
 	// Profile if we have been set to profiling mode.
-        if (isset($_COOKIE['xhprof']) && $_COOKIE['xhprof'] == 'on') {
+        if (isset($_COOKIE['xhgui']) && $_COOKIE['xhgui'] == 'on') {
                 return true;
         }
 
