@@ -24,7 +24,7 @@
 #
 ### BEGIN INIT INFO
 # Provides: apparmor
-# Required-Start: $remote_fs
+# Required-Start: $local_fs
 # Required-Stop: umountfs
 # Default-Start: S
 # Default-Stop:
@@ -135,17 +135,6 @@ EOM
 		clear_cache
 		load_configured_profiles
 		rc=$?
-
-		# Now, we have to find profiles that were removed.  Currently
-		# we must re-parse all the profiles to get policy names.  :(
-		aa_configured=$(mktemp -t aa-XXXXXX)
-		configured_profile_names > "$aa_configured" || exit 1
-		aa_loaded=$(mktemp -t aa-XXXXXX)
-		running_profile_names > "$aa_loaded" || exit 1
-		LC_COLLATE=C comm -2 -3 "$aa_loaded" "$aa_configured" | while read profile ; do
-			unload_profile "$profile"
-	        done
-		rm -f "$aa_configured" "$aa_loaded"
 
 		log_end_msg "$rc"
 		;;

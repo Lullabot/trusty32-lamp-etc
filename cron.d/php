@@ -11,4 +11,4 @@
 #  sessions yourself.
 
 # Look for and purge old sessions every 30 minutes
-09,39 *     * * *     root   [ -x /usr/lib/php/sessionclean ] && /usr/lib/php/sessionclean
+09,39 *     * * *     root   [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi
