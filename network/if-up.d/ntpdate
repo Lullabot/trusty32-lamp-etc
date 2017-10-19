@@ -39,21 +39,11 @@ if [ -x /usr/bin/lockfile-create ]; then
 	LOCKTOUCHPID="$!"
 fi
 
-if [ -e /usr/sbin/openntpd ]; then
-    service='openntpd'
-else
-    service='ntp'
-fi
-
-invoke-rc.d --quiet $service stop >/dev/null 2>&1 || true
-
 /usr/sbin/ntpdate-debian -s $OPTS 2>/dev/null || :
 
 if [ -x /usr/bin/lockfile-create ] ; then
 	kill $LOCKTOUCHPID
 	lockfile-remove $LOCKFILE
 fi
-
-invoke-rc.d --quiet $service start >/dev/null 2>&1 || true
 
 ) &
