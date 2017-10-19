@@ -41,8 +41,8 @@
   /dev/bus/usb/**/[0-9]* w,
 
   # for -z
-  /bin/gzip ixr,
-  /bin/bzip2 ixr,
+  /{usr/,}bin/gzip ixr,
+  /{usr/,}bin/bzip2 ixr,
 
   # for -F and -w
   audit deny @{HOME}/.* mrwkl,
