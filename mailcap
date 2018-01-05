@@ -29,6 +29,7 @@ text/plain; less '%s'; needsterminal
 text/html; /usr/bin/sensible-browser '%s'; description=HTML Text; nametemplate=%s.html
 application/x-troff-man; /usr/bin/nroff -mandoc -Tutf8; copiousoutput; print=/usr/bin/nroff -mandoc -Tutf8 | print text/plain:-
 application/x-info; /usr/bin/info -f '%s'; needsterminal; description=GNU Info document
+application/zip; unzip -l '%s'; nametemplate=%s.zip; copiousoutput
 text/plain; more '%s'; needsterminal
 image/avs; /usr/bin/display.im6 %s; test=test -n "$DISPLAY"
 image/bie; /usr/bin/display.im6 %s; test=test -n "$DISPLAY"
